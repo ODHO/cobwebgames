@@ -4,14 +4,20 @@ import { useEffect } from 'react';
 
 export default function Reviews() {
   useEffect(() => {
-    let slickTimer: NodeJS.Timeout;
+    const init = () => {
+      const $ = (window as any).$;
 
-    const initSlick = () => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const $ = (window as any).$;
-        $('.review-slider').slick({
+      if (!$ || !$.fn?.slick) {
+        setTimeout(init, 100);
+        return;
+      }
+
+      const slider = $('.review-slider');
+
+      if (!slider.length) return;
+
+      if (!slider.hasClass('slick-initialized')) {
+        slider.slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -24,26 +30,34 @@ export default function Reviews() {
               settings: {
                 slidesToShow: 2,
                 dots: true,
-              }
+              },
             },
             {
               breakpoint: 767,
               settings: {
                 slidesToShow: 1,
                 dots: true,
-              }
-            }
-          ]
+              },
+            },
+          ],
         });
-      } else {
-        slickTimer = setTimeout(initSlick, 100);
       }
     };
 
-    initSlick();
+    const timer = setTimeout(init, 100);
 
     return () => {
-      clearTimeout(slickTimer);
+      clearTimeout(timer);
+
+      const $ = (window as any).$;
+
+      if ($?.fn?.slick) {
+        const slider = $('.review-slider');
+
+        if (slider.hasClass('slick-initialized')) {
+          slider.slick('unslick');
+        }
+      }
     };
   }, []);
 
