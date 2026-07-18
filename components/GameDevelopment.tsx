@@ -25,7 +25,7 @@ export default function GameDevelopment() {
         const $ = (window as any).$;
         
         // Initialize dev thumbnail slider
-        $('.dev-thumb-slider').slick({
+        $('.dev-thumb-slider').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -36,7 +36,7 @@ export default function GameDevelopment() {
         });
 
         // Initialize dev main slider
-        $('.dev-slider-content').slick({
+        $('.dev-slider-content').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,

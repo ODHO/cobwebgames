@@ -26,7 +26,7 @@ export default function GameArt() {
         const $ = (window as any).$;
         
         // Initialize art thumbnail slider
-        $('.art-thumb-slider').slick({
+        $('.art-thumb-slider').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -37,7 +37,7 @@ export default function GameArt() {
         });
 
         // Initialize art main slider
-        $('.art-slider-content').slick({
+        $('.art-slider-content').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,

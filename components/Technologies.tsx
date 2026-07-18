@@ -11,7 +11,7 @@ export default function Technologies() {
 			if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
 				// eslint-disable-next-line @typescript-eslint/no-explicit-any
 				const $ = (window as any).$;
-				$(".tech-mob-slider").slick({
+				$(".tech-mob-slider").not('.slick-initialized').slick({
 					arrows: false,
 					dots: true,
 					autoplay: true,

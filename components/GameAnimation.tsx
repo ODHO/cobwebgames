@@ -20,7 +20,7 @@ export default function GameAnimation() {
         const $ = (window as any).$;
         
         // Initialize anim thumbnail slider
-        $('.anim-thumb-slider').slick({
+        $('.anim-thumb-slider').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -31,7 +31,7 @@ export default function GameAnimation() {
         });
 
         // Initialize anim main slider
-        $('.anim-slider-content').slick({
+        $('.anim-slider-content').not('.slick-initialized').slick({
           dots: false,
           infinite: true,
           speed: 300,

@@ -8,7 +8,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/character/man/viking-character-pack', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/viking-character-pack-2306159', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-viking-character'
+    learnMore: '/portfolio/resource-pack-viking-character'
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/character/sci-fi-character/cyber-punk-characters', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/cyberpunk-characters-2334174', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-cyberpunk-characters'
+    learnMore: '/portfolio/resource-pack-cyberpunk-characters'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const gameArtItems = [
       { url: 'https://www.turbosquid.com/3d-models/hybrid-3d-car-2302347', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/hybrid-3d-car-2302347', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-3d-car'
+    learnMore: '/portfolio/resource-pack-3d-car'
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/vehicle/train/train-fda0fcb9-c27f-45fd-9b0e-34e7cface01e', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/train-asset-pack-2302323', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-3d-train'
+    learnMore: '/portfolio/resource-pack-3d-train'
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/house-interior/house-1ef70601-7aed-4092-877d-fe881e81c7ac', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/house-interior-asset-pack-2302002', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-modern-house-interior'
+    learnMore: '/portfolio/resource-pack-modern-house-interior'
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/cityscape/cybercity', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/cyber-city-asset-pack-2301689', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-cyber-city'
+    learnMore: '/portfolio/resource-pack-cyber-city'
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/landscape/viking-village-7b981eb5-fedd-4bf1-b00e-5d89c0c75160', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/viking-village-asset-pack-2299431', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-viking-village'
+    learnMore: '/portfolio/resource-pack-viking-village'
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/other/coffee-shop-b764968b-f302-4bdf-b03b-ad32b2cc1416', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/coffee-shop-3d-asset-pack-2298882', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-coffee-shop'
+    learnMore: '/portfolio/resource-pack-coffee-shop'
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/other/classroom-51040ace-7a50-42f2-b6fe-9bea45e4233c', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/classroom-3d-asset-pack-2247114', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-classroom-interior'
+    learnMore: '/portfolio/resource-pack-classroom-interior'
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/landscape/fantasy-temple-9dec9adc-5c11-4d31-b891-effe25a9767d', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/fantasy-temple-3d-asset-pack-2262117', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-fantasy-temple'
+    learnMore: '/portfolio/resource-pack-fantasy-temple'
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/landscape/military-base-f02b5e67-f65a-48c2-9289-f1a36b59214b', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/military-base-3d-asset-pack-2261883', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-military-base'
+    learnMore: '/portfolio/resource-pack-military-base'
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/interior-office/dental-clinic-569a08a6-db0c-44e9-9807-6a64bb898fd3', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/dental-clinic-3d-asset-pack-2262335', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-dental-clinic'
+    learnMore: '/portfolio/resource-pack-dental-clinic'
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/industrial-exterior/construction-site-bd269fe7-861c-4934-a196-ca910329770e', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/construction-site-3d-asset-pack-2276906', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-construction'
+    learnMore: '/portfolio/resource-pack-construction'
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/office/winter-office', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/winter-office-3d-asset-pack-2277271', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-winter-office'
+    learnMore: '/portfolio/resource-pack-winter-office'
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/bedroom/valentine-f619c946-9d83-4f85-9b42-43ba20fa585c', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/the-intimate-valentine-day-3d-asset-pack-2296912', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-valentine'
+    learnMore: '/portfolio/resource-pack-valentine'
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/other/warehouse-88e76950-f9e3-4851-87a5-2004b889d808', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/the-industrial-grade-warehouse-3d-asset-pack-2262737', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-warehouse'
+    learnMore: '/portfolio/resource-pack-warehouse'
   },
   {
     id: 17,
@@ -184,7 +184,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/interior/living-room/christmas-0e21ba72-5dbf-43a2-9470-2f4890937bff', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/the-festive-christmas-3d-asset-pack-2229695', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-christmas'
+    learnMore: '/portfolio/resource-pack-christmas'
   },
   {
     id: 18,
@@ -195,7 +195,7 @@ export const gameArtItems = [
       { url: 'https://www.cgtrader.com/3d-models/exterior/landscape/halloween-6b3f8440-76dc-4194-a25d-9859d3182ce7', icon: '/assets/images/info-2.png' },
       { url: 'https://www.turbosquid.com/3d-models/the-ultimate-halloween-3d-asset-pack-2276969', icon: '/assets/images/info-3.png' }
     ],
-    learnMore: 'https://cobwebgames.co/resource-pack-halloween'
+    learnMore: '/portfolio/resource-pack-halloween'
   }
 ];
 
