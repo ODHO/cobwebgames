@@ -727,6 +727,8 @@ export default function GameArt() {
                   src="/assets/images/faq-img-01.webp" alt="*" />
                 <img className="img-02 lazy"
                   src="/assets/images/faq-img-02.webp" alt="*" />
+                <img className="img-03 lazy"
+                  src="/assets/images/fire.gif" alt="*" />
               </div>
             </div>
           </div>
