@@ -253,9 +253,10 @@ export default function GameAnimation() {
               <p>Browse some diverse games and applications our talented teams have helped shape. We&apos;ve played an integral role in delivering groundbreaking interactive experiences to enthusiastic audiences worldwide.</p>
             </div>
           </div>
-          <div className="row g-0 mob-slider">
+          <div className="row g-0">
+            {/* Left column */}
             <div className="col-lg-6">
-              <div className="row g-0 ">
+              <div className="row g-0">
                 <div className="col-lg-12">
                   <a href="/assets/images/portfolio/2d-art/port-01.webp" className="port-img h-1" data-fancybox tabIndex={0}>
                     <img src="/assets/images/portfolio/2d-art/port-01.webp" alt="*" />
@@ -273,6 +274,7 @@ export default function GameAnimation() {
                 </div>
               </div>
             </div>
+            {/* Right column */}
             <div className="col-lg-6">
               <div className="row g-0">
                 <div className="col-lg-6">
