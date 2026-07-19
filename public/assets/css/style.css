@@ -342,7 +342,7 @@ footer ul.ssm-icons {
 .team-sec4 h4:after,
 .team-sec4 h4:before,
 .tech-sec h4:after,
-.tech-sec h4:before {
+.tech-sec h4:before{
     height: 4px;
     background: #4bf648;
     clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
@@ -406,11 +406,11 @@ header .menu-btn {
     top: 0
 }
 
-header .logo-wrap a img {
+header .logo-wrap button img {
     width: 100%
 }
 
-header .menu-btn a {
+header .menu-btn button {
     width: 75px;
     height: 75px;
     background: #fff;
@@ -420,7 +420,7 @@ header .menu-btn a {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 20% 100%, 0 75%)
 }
 
-header .menu-btn a:hover img {
+header .menu-btn button:hover img {
     animation: 3s rotate360_1
 }
 
@@ -2468,7 +2468,7 @@ footer ul.ssm-icons li a:hover img {
     left: 0;
     top: 0;
     filter: blur(0px);
-    background: linear-gradient(180deg, #1b1e26 0, rgba(0, 0, 0, 0) 44.59%, #1b1e26 100%)
+    /* background: linear-gradient(180deg, #1b1e26 0, rgba(0, 0, 0, 0) 44.59%, #1b1e26 100%) */
 }
 
 .inner-portfolio p,
@@ -2704,16 +2704,53 @@ footer ul.ssm-icons li a:hover img {
 }
 
 .menu-wapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #1b1e26;
-    z-index: 999999;
-    transition: .5s linear;
-    transform: scale(0);
-    transform-origin: top right
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 9999;
+    
 }
 
+.menu-wapper.active {
+   opacity: 1;
+    visibility: visible;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background: #1b1e26; */
+    z-index: 999999;
+    transition: .5s linear;
+    /* transform: scale(0); */
+    transform-origin: top right;
+    overflow: auto;
+}
+header .menu-btn button {
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 20% 100%, 0 75%);
+}
+header .logo-wrap img.logo-img {
+    width: 70%;
+    margin: auto;
+    transition: .4s linear;
+}
+@media (max-width: 991px) {
+    .menu-wapper {
+        height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+header .logo-wrap img.logo-img:hover{
+    transform: scale(1.05);
+    transition: .4s linear;
+}
 .cta-sec-n {
     margin-left: 300px;
     position: relative;
@@ -2832,22 +2869,22 @@ footer ul.ssm-icons li a:hover img {
 }
 
 .menu-wapper #wrapper {
-    overflow: hidden;
+   overflow: hidden;
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: url(https://user-images.githubusercontent.com/26748614/112760946-182a8300-8ff9-11eb-9881-8ca96150852e.jpg) 75% 0/140%;
+    background: url(https://user-images.githubusercontent.com/26748614/112760946-182a8300-8ff9-11eb-9881-8ca96150852e.jpg) 75% 0 / 140%;
     animation: 5s linear infinite paused bg;
-    opacity: .2;
-    pointer-events: none
+    opacity: 1.2;
+    pointer-events: none;
 }
 
 .menu-wapper .bg {
-    width: 100%;
+       width: 100%;
     height: 100vh;
     background: linear-gradient(to right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 100%;
-    animation: 5s infinite bg
+    animation: 5s infinite bg;
 }
 
 @keyframes bg {
@@ -2863,13 +2900,40 @@ footer ul.ssm-icons li a:hover img {
 }
 
 .menu-wapper svg {
-    display: block;
+        display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 100vh
+    height: 100%;
+}
+.menu-wapper.active .logo-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    position: relative;
+}
+.menu-wapper.active .logo-wrapper img {
+    width: 70%;
+    margin: auto;
+}
+.menu-wapper.active button.close-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background: #2cff28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #242938;
+    font-weight: 600;
+    z-index: 999999;
 }
 
 .menu-wapper svg polygon.center {
@@ -3488,6 +3552,29 @@ body.menu-open.bordered-body::before {
     width: 500px;
 }
 @media (max-width: 767px) {
+    .game-banner h1{
+         font-size: 28px ;
+        line-height: 39px ;
+    }
+    .game-banner h5{
+        width: 100%;
+    }
+    .h-sec-3 .container:before{
+        height: 100%;
+        clip-path:none
+    }
+    .h-sec-3 .box-wrap{
+        
+    width: 95%;
+    }
+    .h-sec-3 .box-wrap .content{
+            transform: translateY(0) !important;
+    background: linear-gradient(188deg, rgb(34 34 34 / 0%) -19.93%, rgb(0 0 0 / 75%) 100%) !important;
+    }
+    .h-sec-3 .box-wrap .content p{
+        font-size: 12px;
+        opacity: 1 !important;
+    }
     .resource-pack-inner-wrap-1 h1 {
         font-size: 28px ;
         line-height: 39px ;

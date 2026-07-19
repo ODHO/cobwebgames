@@ -241,7 +241,7 @@
         left: -420px;
     }
 
-    header .menu-btn a {
+    header .menu-btn button {
         width: 65px;
         height: 65px;
     }
