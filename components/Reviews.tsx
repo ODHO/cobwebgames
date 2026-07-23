@@ -86,13 +86,14 @@ export default function Reviews() {
               <li>
                 <div className="box-wraper">
                   <div className="box-child">
-                    <p>We were extremely pleased with the character and environmental concepts created by the Cobweb Game art team. Their creative and skilled designers understood our vision for a fantasy RPG world. Not only did the art capture the aesthetic we envisioned, but it was also optimized beautifully for gameplay. We will definitely utilize their art services on future projects.</p>
+                    <p>Cobweb was the first studio that asked about our pipeline before they asked about the brief. Every asset they delivered integrated cleanly on the first import. That had not happened before on an outsourced production.</p>
                     <div className="bottom">
                       <span>
                         <img src="/assets/images/avatar-01.webp" alt="*" />
                       </span>
                       <span>
-                        <h5>Jacob Shaw</h5>
+                        <h5>Harry</h5>
+                        <span><i>Game Director</i></span>
                       </span>
                     </div>
                   </div>
@@ -101,13 +102,14 @@ export default function Reviews() {
               <li>
                 <div className="box-wraper">
                   <div className="box-child">
-                    <p>The animations Cobweb Game developed took our game to the next level. Characters moved with realistic fluidity yet retained their intended graphic styles. Players particularly mentioned how immersive the animations made combat and exploration feel. It was also impressive to see how the team adhered to our tight schedules while maintaining high-quality work.</p>
+                    <p>The environment art they delivered had zero performance issues in the build, and the visual quality matched the concept art exactly. No notes from the art director on the first submission. For an external team working from a reference they had not produced, that is not the typical outcome.</p>
                     <div className="bottom">
                       <span>
-                        <img src="/assets/images/avatar-02.webp" alt="*" />
+                        <img src="/assets/images/avatar-01.webp" alt="*" />
                       </span>
                       <span>
-                        <h5>Sebastian Shane</h5>
+                        <h5> Otto</h5>
+                        <span><i>Art Producer, AA Game Studio</i></span>
                       </span>
                     </div>
                   </div>
@@ -138,21 +140,6 @@ export default function Reviews() {
                       </span>
                       <span>
                         <h5>Thomas Riley</h5>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="box-wraper">
-                  <div className="box-child">
-                    <p>The game developed by Cobweb Games was fantastic and really captivated our audience. They delivered everything according to the requirements, and everything was on time. The quality of their work is superb, and their customer service is excellent.</p>
-                    <div className="bottom">
-                      <span>
-                        <img src="/assets/images/avatar-01.webp" alt="*" />
-                      </span>
-                      <span>
-                        <h5>David Keith.</h5>
                       </span>
                     </div>
                   </div>

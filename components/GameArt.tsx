@@ -4,16 +4,66 @@ import { useEffect } from 'react';
 
 export default function GameArt() {
   const categories = [
-    { key: "2d_art", path: "2d-art", title: "2D art" },
-    { key: "3d_art", path: "3d-art", title: "3D art" },
-    { key: "3d_character", path: "3d-character", title: "3D Character Design" },
-    { key: "3d_environment", path: "3d-environment", title: "3D Environment Design" },
-    { key: "3d_game", path: "3d-game", title: "3D Game Model" },
-    { key: "3d_illustration", path: "3d-illustration", title: "3D Illustration Services" },
-    { key: "character_design", path: "character-design", title: "Character Design" },
-    { key: "environment_design", path: "environment-design", title: "Environment design" },
-    { key: "game_level", path: "game-level", title: "Game Level Design" },
-    { key: "uiux", path: "uiux", title: "UIUX Design" }
+    { 
+      key: "2d_art", 
+      path: "2d-art", 
+      title: "2D art",
+      description: "Full-service game art outsourcing across 2D art and 3D art. Concept through final deliverable, named to your convention, formatted for your pipeline."
+    },
+    { 
+      key: "3d_art", 
+      path: "3d-art", 
+      title: "3D art",
+      description: "Full-service game art outsourcing across 2D art and 3D art. Concept through final deliverable, named to your convention, formatted for your pipeline."
+    },
+    { 
+      key: "3d_character", 
+      path: "3d-character", 
+      title: "3D Character Design",
+      description: "Original character designs built with animation and rigging requirements in mind from the first sketch, not discovered to be problematic at the rig stage."
+    },
+    { 
+      key: "3d_environment", 
+      path: "3d-environment", 
+      title: "3D Environment Design",
+      description: "3D Game Environment art that serves gameplay, respects the draw call budget, and makes the player feel like they are somewhere specific."
+    },
+    { 
+      key: "3d_game", 
+      path: "3d-game", 
+      title: "3D Game Model",
+      description: "Production-ready 3D game models at the poly count, UV spec, and PBR texturing standard the brief requires."
+    },
+    { 
+      key: "3d_illustration", 
+      path: "3d-illustration", 
+      title: "3D Illustration Services",
+      description: "3D illustration services for marketing, pitch materials, and promotional content at a visual quality that sells the game before it ships."
+    },
+    { 
+      key: "character_design", 
+      path: "character-design", 
+      title: "Character Design",
+      description: "Original character designs built with animation and rigging requirements in mind from the first sketch, not discovered to be problematic at the rig stage."
+    },
+    { 
+      key: "environment_design", 
+      path: "environment-design", 
+      title: "Environment design",
+      description: "3D Game Environment art that serves gameplay, respects the draw call budget, and makes the player feel like they are somewhere specific."
+    },
+    { 
+      key: "game_level", 
+      path: "game-level", 
+      title: "Game Level Design",
+      description: "Game Level art and level design support across visual fidelity tiers. AAA blockout-to-production pipelines and 2D level design for mobile and indie."
+    },
+    { 
+      key: "uiux", 
+      path: "uiux", 
+      title: "UIUX Design",
+      description: "Game UI art design that communicates at a glance under active gameplay cognitive load. Tested at the screen sizes real players use."
+    }
   ];
 
   useEffect(() => {
@@ -91,12 +141,9 @@ export default function GameArt() {
           </div>
           <div className="col-lg-6">
             <div className="content-wrap">
-              <h2 className="main-heading">Game <b className="c-green">Art</b></h2>
-              <p>We provide expert game art outsourcing services for video games. Our artists create vibrant
-                2D and detailed 3D graphics, including concept art, characters, environments, and more.
-                Whether a match needs flashy AAA art or casual illustrations, their team delivers
-                top-quality game assets. With experience in various styles and genres, we help indie studios
-                and major publishers bring your visions to life through compelling visuals.</p>
+              <h2 className="main-heading">Cobweb Game <b className="c-green">Art</b> Services</h2>
+              <p>Game art built for the engine, not the portfolio. Every asset is production-ready on delivery.
+</p>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>
                   <a href="/game-art" className="btn-size btn-green popup">Read More</a>
@@ -132,6 +179,12 @@ export default function GameArt() {
                           </a>
                         </div>
                       ))}
+                    </div>
+                    {/* Description added here */}
+                    <div className="category-description mt-3 p-3" style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: '8px', borderLeft: '3px solid #00ff88' }}>
+                      <p className="text-white" style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '0' }}>
+                        {cat.description}
+                      </p>
                     </div>
                   </div>
                 </li>

@@ -4,15 +4,60 @@ import { useEffect } from 'react';
 
 export default function GameDevelopment() {
   const categories = [
-    { key: "3d-game", path: "3d-game-developmnt", title: "3D Game Development" },
-    { key: "ai_game", path: "ai-game", title: "AI Game Development" },
-    { key: "blockchain_game", path: "blockchain-game", title: "Blockchain Game" },
-    { key: "game_prototyping", path: "game-prototyping", title: "Game Prototyping" },
-    { key: "game_testing", path: "game-testing", title: "Game Testing" },
-    { key: "mobile_game", path: "mobile-game", title: "Mobile Game" },
-    { key: "earn_game", path: "earn-games", title: "Play to Earn Games" },
-    { key: "unity_game", path: "unity-game", title: "Unity game" },
-    { key: "unreal_game", path: "unreal-game", title: "Unreal engine game" }
+    { 
+      key: "3d-game", 
+      path: "3d-game-developmnt", 
+      title: "3D Game Development",
+      description: "Three-dimensional game development across PC, console, and VR. Full production pipeline from design through platform-ready build."
+    },
+    { 
+      key: "ai_game", 
+      path: "ai-game", 
+      title: "AI Game Development",
+      description: "AI game development for NPC behavior, procedural content generation, adaptive difficulty, and AI-driven game systems that change the player experience."
+    },
+    { 
+      key: "blockchain_game", 
+      path: "blockchain-game", 
+      title: "Blockchain Game",
+      description: "Blockchain game development and web3 game development for on-chain ownership, NFT integration, and the infrastructure that makes decentralized game economies work at scale."
+    },
+    { 
+      key: "game_prototyping", 
+      path: "game-prototyping", 
+      title: "Game Prototyping",
+      description: "Rapid game prototyping to validate the core loop before full production investment. The prototype answers whether the game is fun. Everything else is implementation."
+    },
+    { 
+      key: "game_testing", 
+      path: "game-testing", 
+      title: "Game Testing",
+      description: "QA and game testing across platforms and devices. Manual, automated, and platform certification testing for approved listings."
+    },
+    { 
+      key: "mobile_game", 
+      path: "mobile-game", 
+      title: "Mobile Game",
+      description: "Mobile game development for iOS and Android, performance-calibrated from the first line of code. App store submission and post-launch support are included in scope."
+    },
+    { 
+      key: "earn_game", 
+      path: "earn-games", 
+      title: "Play to Earn Games",
+      description: "Play-to-earn game development with smart contract integration, token economy design, and the technical architecture that separates functional P2E from vaporware."
+    },
+    { 
+      key: "unity_game", 
+      path: "unity-game", 
+      title: "Unity game",
+      description: "Unity game development across 2D, 3D, AR, VR, and mobile platforms. Custom Unity3D game development with the full engine feature set applied to your project."
+    },
+    { 
+      key: "unreal_game", 
+      path: "unreal-game", 
+      title: "Unreal engine game",
+      description: "Unreal Engine game development for projects where Lumen, Nanite, or the Unreal pipeline's advantages justify the engine choice. We recommend the engine that fits the project."
+    }
   ];
 
   useEffect(() => {
@@ -70,17 +115,9 @@ export default function GameDevelopment() {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="content-wrap">
-              <h2 className="main-heading">Game <b className="c-green">Development</b></h2>
+              <h2 className="main-heading">Cobweb Game <b className="c-green">Development</b> Services</h2>
               <p className="w-100 custom-height-scroll">
-                We offer full-service game development from initial concept to worldwide launch. Our skilled
-                teams have the expertise to bring any
-                vision to life, whether it be for console, mobile, VR/AR, or other platforms. Through
-                collaborative prototyping and an iterative polishing process,
-                we focus on crafting immersive experiences that truly engage players. <br /><br /> Behind the
-                scenes, our backend solutions seamlessly handle player data
-                to enhance the gameplay. Global product releases are our specialty, as we can manage every
-                stage of production from ideation to live operations and
-                ensure your game delights audiences around the world.
+               Full-cycle game development from concept through platform submission. Unity and Unreal Engine. Mobile, PC, VR, and everything the brief calls for.
               </p>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>
@@ -123,6 +160,12 @@ export default function GameDevelopment() {
                           </a>
                         </div>
                       ))}
+                    </div>
+                    {/* Description added here */}
+                    <div className="category-description mt-3 p-3" style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: '8px', borderLeft: '3px solid #00ff88' }}>
+                      <p className="text-white" style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '0' }}>
+                        {cat.description}
+                      </p>
                     </div>
                   </div>
                 </li>

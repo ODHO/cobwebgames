@@ -15,6 +15,9 @@ import FooterForm from '../components/FooterForm';
 import Link from 'next/link';
 import imagemain from '@/public/assets/images/banner-img-icon-01.webp'
 import Image from 'next/image';
+import Counter from '@/components/Counter';
+import { FaGamepad, FaHandshake } from 'react-icons/fa';
+import AboutContent from '@/components/StackedSec';
 
 export default function Home() {
   useEffect(() => {
@@ -32,7 +35,7 @@ export default function Home() {
         const progress = btn.querySelector('.progress') as HTMLElement;
         if (progress) progress.style.height = '0';
       });
-      
+
       if (buttons[index]) {
         buttons[index].classList.add('active-button');
         const progress = buttons[index].querySelector('.progress') as HTMLElement;
@@ -92,8 +95,8 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="content">
                 <h5>Cobweb Games</h5>
-                <h1>Game Art and <b>Development </b>Studio</h1>
-                <p>We are a premier game development company dedicated to transforming concepts into fully playable games.</p>
+                <h1>Game <b>Development </b>& Art Studio in the USA.</h1>
+                <p>Bad game studios ship renders. Good ones ship games. We are a USA-based game development company and game art studio for indie developers, AA studios, and gaming brands that need production that actually reaches the end screen. Game art services, game animation, and full-cycle development on Unity and Unreal Engine. Assets built for the build, not the portfolio. Code written for the platform, not the demo. </p>
                 <ul className="btn-wrap d-flex align-items-center">
                   <li>
                     <a href="/contact-us" className="btn-size btn-purple popup">Get Started</a>
@@ -114,32 +117,59 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className="banner-tabs">
-                <ul className="d-flex align-items-center">
-                  <li id="btn1">
-                    <Image className="lazy"
-                      src={imagemain}
-                      alt="*" />
-                    <div className="progress"></div>
-                  </li>
-                  <li id="btn2">
-                    <img className="lazy"
-                      src="/assets/images/banner-img-icon-02.webp"
-                      alt="*" />
-                    <div className="progress"></div>
-                  </li>
-                  <li id="btn3">
-                    <img className="lazy"
-                      src="/assets/images/banner-img-icon-03.webp"
-                      alt="*" />
-                    <div className="progress"></div>
-                  </li>
-                  <li id="btn4">
-                    <img className="lazy"
-                      src="/assets/images/banner-img-icon-04.webp"
-                      alt="*" />
-                    <div className="progress"></div>
-                  </li>
-                </ul>
+                <div className="container-fluid">
+                  <div className="banner-heading">
+                    <h2 className='text-center mb-5'>One team. One pipeline. Press start.</h2>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-2-4 col-lg-3 col-md-6">
+                      <div className="counter-wrap text-center">
+                        <div className="wrap">
+                          <Counter end={200} duration={3000} />
+                          <span className="sign">+</span>
+                        </div>
+                        <p>Games Shipped </p>
+                      </div>
+                    </div>
+                    <div className="col-lg-2-4 col-lg-3 col-md-6">
+                      <div className="counter-wrap text-center">
+                        <div className="wrap">
+                          <Counter end={50} duration={3000} />
+                          <span className="sign">+</span>
+                        </div>
+                        <p>Studios Partnered</p>
+                      </div>
+                    </div>
+                    <div className="col-lg-2-4 col-lg-3 col-md-6">
+                      <div className="counter-wrap text-center">
+                        <div className="wrap">
+                          <Counter end={12} duration={3000} />
+                          <span className="sign">+</span>
+                        </div>
+                        <p>Platforms Supported</p>
+                      </div>
+                    </div>
+                    <div className="col-lg-2-4 col-lg-3 col-md-6">
+                      <div className="counter-wrap text-center">
+                        <div className="wrap">
+                          <h3>
+                            <FaGamepad className="text-white text-xl" /></h3>
+                        </div>
+                        <p> Unity & Unreal Certified</p>
+                      </div>
+                    </div>
+                    <div className="col-lg-2-4 col-lg-3 col-md-6">
+                      <div className="counter-wrap text-center">
+                        <div className="wrap">
+                          <h3>
+                            <FaHandshake className="text-white text-xl" />
+                          </h3>
+                        </div>
+                        <p>Plug-and-Play Partner For Gaming Companies</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="image-container">
                 <div className="img-wrap" id="img1">
@@ -181,6 +211,7 @@ export default function Home() {
       </section>
 
       {/* Reconstructed Homepage Sections */}
+      <AboutContent/>
       <WhatIsDifferent />
       <CtaOne />
       <GameArt />

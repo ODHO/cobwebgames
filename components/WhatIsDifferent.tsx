@@ -29,8 +29,8 @@ export default function WhatIsDifferent() {
             <h2 className="main-heading">What is Different About Cobweb Games?</h2>
           </div>
           <div className="col-lg-4">
-            <p>Cobweb Games excels in crafting thrilling gaming worlds with exceptional projects and vibrant
-              art, acclaimed by top-tier video game companies.</p>
+            {/* <p>Cobweb Games excels in crafting thrilling gaming worlds with exceptional projects and vibrant
+              art, acclaimed by top-tier video game companies.</p> */}
           </div>
           <div className="col-lg-2">
             <a href="about-us">Read More <i className="fa-solid fa-arrow-right-long"></i></a>
@@ -45,9 +45,7 @@ export default function WhatIsDifferent() {
               </div>
               <div className="content">
                 <h3>Long-Term Partnership</h3>
-                <p>We prioritize long-term partnerships, fostering enduring relationships with clients to
-                  consistently deliver exceptional game development services that evolve with industry
-                  trends and client needs.</p>
+                <p>Game development does not end at launch. Live ops, content updates, and sequel production are where most studio relationships should continue and most vendor relationships terminate. We structure every engagement with the long view in mind. The studios that work with us for the first project rarely brief a new partner for the second.</p>
               </div>
             </div>
           </div>
@@ -58,10 +56,8 @@ export default function WhatIsDifferent() {
                   src="/assets/images/holistic.webp" alt="*" />
               </div>
               <div className="content">
-                <h3>Holistic Solutions</h3>
-                <p>Our holistic solutions encompass every aspect of game development, from concept to
-                  launch, ensuring a seamless and comprehensive approach tailored to your unique project
-                  requirements.</p>
+                <h3>All-Range Solutions</h3>
+                <p>Art, development, and animation under one roof means the animator knows the poly budget the modeler is working to, the environment artist knows the LOD thresholds the tech artist has established, and the developer knows the asset naming convention the art team is using. No translation layer between disciplines.</p>
               </div>
             </div>
           </div>
@@ -73,8 +69,8 @@ export default function WhatIsDifferent() {
               </div>
               <div className="content">
                 <h3>Pro 3D Modelers</h3>
-                <p>Our exceptional 3D modelers, and animators collaborates closely to create cutting edge
-                  games, blending expertise and creativity for the extraordinary results.</p>
+                <p>Our 3D team has shipped assets in games. They have encountered the normal map artifact from a bad cage setting and the LOD pop that appears at exactly the wrong camera distance. They check for these things because they have seen what happens when you do not.
+</p>
               </div>
             </div>
           </div>
@@ -86,8 +82,7 @@ export default function WhatIsDifferent() {
               </div>
               <div className="content">
                 <h3>Premium Edition Games</h3>
-                <p>We specialize in creating games that captivate players, offering immersive experiences
-                  and innovative gameplay that sets new industry standards.</p>
+                <p>Quality is calibrated to the brief. AAA-scale briefs get AAA-scale treatment. Tight indie projects get the focused production discipline that ships a polished game on a sensible budget.</p>
               </div>
             </div>
           </div>

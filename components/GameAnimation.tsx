@@ -4,10 +4,48 @@ import { useEffect } from 'react';
 
 export default function GameAnimation() {
   const categories = [
-    { key: "2d_animation", path: "2d-animation", title: "2D Animation" },
-    { key: "3d_animation", path: "3d-animation", title: "3D Animation" },
-    { key: "2d_animation_repeat", path: "2d-animation", title: "2D Animation" }, // repeating per original PHP structure
-    { key: "3d_animation_repeat", path: "3d-animation", title: "3D Animation" }
+    { 
+      key: "2d_animation", 
+      path: "2d-animation", 
+      title: "2D Animation",
+      description: "Our 2D Animation Services includes everything from character movement cycles, idle animations, attack sequences, and the transition frames that determine whether motion reads as fluid or mechanical. Delivered as correctly-packed sprite sheets."
+    },
+    { 
+      key: "3d_animation", 
+      path: "3d-animation", 
+      title: "3D Animation",
+      description: "3D animation services engineered for the animation state machine. Weight painting and joint limits handled so your character moves like a character and not a glitchy mess of vertices."
+    },
+    { 
+      key: "cycle_animations", 
+      path: "2d-animation", 
+      title: "Cycle Animations",
+      description: "Walk cycles, run cycles, idle cycles, and the full movement library a character needs to exist believably in a real-time environment."
+    },
+    { 
+      key: "environment_animation", 
+      path: "3d-animation", 
+      title: "Environment Animation",
+      description: "Foliage, water, atmospheric effects, and interactive world elements. The ambient motion that makes a world feel alive rather than rendered."
+    },
+    { 
+      key: "game_trailer", 
+      path: "2d-animation", 
+      title: "Game Trailer Animation",
+      description: "Cinematic trailer animation for announcements and launch campaigns. Built to create the feeling of playing the game rather than listing its features."
+    },
+    { 
+      key: "vfx_cutscene", 
+      path: "3d-animation", 
+      title: "VFX and Cutscene Animation",
+      description: "VFX and cutscene animation that holds the visual quality standard that the rest of the production has established. Not the place to cut the budget."
+    },
+    { 
+      key: "character_animation", 
+      path: "2d-animation", 
+      title: "Character Animation",
+      description: "Full character animation, including dialogue performance, combat systems, and the secondary motion that separates an inhabited character from one that appears to be operated."
+    }
   ];
 
   useEffect(() => {
@@ -73,12 +111,8 @@ export default function GameAnimation() {
           </div>
           <div className="col-lg-6">
             <div className="content-wrap">
-              <h2 className="main-heading">Game <b className="c-green">Animation</b></h2>
-              <p>Let our animation expertise bring your game vision to life. As a leading animation studio, we
-                can design breathtaking visual effects and animate characters with fluid realism. Whether
-                you need 2D or 3D art, our professional animators will craft optimized animations to enhance
-                gameplay and fulfill your creative goals. Outsource to our studio for top-quality character
-                motions and spectacular scenes that captivate players from start to finish.</p>
+              <h2 className="main-heading">Cobweb Game <b className="c-green">Animation</b> Services</h2>
+              <p>Game animation that serves the animation state machine, not the demo reel.</p>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>
                   <a href="/game-animation" className="btn-size btn-green popup">Read More</a>
@@ -102,7 +136,7 @@ export default function GameAnimation() {
           <div className="col-lg-6">
             <ul className="thumb-slider anim-thumb-slider">
               {categories.map((cat, i) => (
-                <li key={i} className={`${cat.key.replace('_repeat', '')} my-tabs ${i === 0 ? "current" : ""}`}>
+                <li key={i} className={`${cat.key} my-tabs ${i === 0 ? "current" : ""}`}>
                   <div className="h-serv-inner-port">
                     <div className="row">
                       {[1, 2, 3].map((num) => (
@@ -114,6 +148,12 @@ export default function GameAnimation() {
                           </a>
                         </div>
                       ))}
+                    </div>
+                    {/* Description added here */}
+                    <div className="category-description mt-3 p-3" style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: '8px', borderLeft: '3px solid #00ff88' }}>
+                      <p className="text-white" style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '0' }}>
+                        {cat.description}
+                      </p>
                     </div>
                   </div>
                 </li>

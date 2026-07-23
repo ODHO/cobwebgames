@@ -18,6 +18,10 @@ export default function CtaTwo() {
 						</div>
 						<div className="col-lg-7">
 							<h2 className="main-heading">Bring Your Ideas to <b className="c-green">Playable Reality!</b></h2>
+							<p>
+								Most games that fail do not fail because the idea was bad. They fail because the production did not have the right team or the right partner. The idea is the starting point. The production is where it becomes a game. 
+
+							</p>
 							<ul className="btn-wrap d-flex align-items-center">
 								<li>
 									<a href="contact-us" className="btn-size btn-white popup">Get Started</a>

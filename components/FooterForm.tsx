@@ -13,8 +13,9 @@ export default function FooterForm() {
 				<div className="container">
 					<div className="row relative">
 						<div className="col-lg-6">
-							<h2 className="main-heading c-dark">Looking for a game development team?</h2>
-							<p>We would love to hear your game idea!</p>
+							<h2 className="main-heading c-dark">Looking to Hire A Battle-Tested Game Development Team?</h2>
+							{/* <p>We would love to hear your game idea!</p> */}
+							<span className="text-black">Tell us the game, the platform, the scope, and the timeline. We will tell you whether we are the right fit, what the production will cost, and how long it will take. If the answer is no on our end, we will tell you that too.</span>
 							<ul className="btn-wrap d-flex align-items-center">
 								<li>
 									<a href="contact-us" className="btn-size btn-white popup">Get Started</a>
@@ -54,7 +55,7 @@ export default function FooterForm() {
 						<div className="col-lg-6">
 							<div className="form-wraper">
 								<h5 className="sm-head text-uppercase">Lets Discuss </h5>
-								<h2 className="main-heading">Your Project?</h2>
+								<h2 className="main-heading">Your Project.</h2>
 								<form action="mail" method="POST">
 									<div className="field-wrap">
 										<input type="text" name="name" placeholder="Your Name" />

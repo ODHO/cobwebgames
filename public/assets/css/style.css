@@ -427,7 +427,7 @@ header .menu-btn button:hover img {
 .home-banner {
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 85%, 95% 100%, 0 100%, 0% 80%, 0 0);
+    
     position: relative;
     padding: 200px 0 300px;
     overflow: hidden
@@ -546,7 +546,94 @@ header .menu-btn button:hover img {
     -webkit-animation: 1.5s ease-out infinite pulse-border;
     animation: 1.5s ease-out infinite pulse-border
 }
+.banner-tabs {
+    padding: 40px 0px;
+}
+.col-lg-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.banner-heading h2 {
+    text-transform: uppercase;
+}
+.banner-tabs .count {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.wrap h3 svg {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    display: table;
+    margin: 0 auto;
+}
+.wrap h3 svg {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    display: table;
+    margin: 0 auto;
+}
 
+section.stacked-sec {
+    background: #1b1e26;
+}
+
+section.stacked-sec span {
+    color: #00ff4a;
+}
+.under{
+ background-color: #00ff4a;
+}
+section.stacked-sec p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+section.stacked-sec p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+section.stacked-sec h2 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    padding-bottom: 40px;
+}
+
+section.stacked-sec h2 span {
+    letter-spacing: -.01em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    -moz-text-fill-color: transparent;
+}
+.banner-tabs .sign {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: #2cff28;
+}
 .home-banner .banner-tabs {
     position: absolute;
     bottom: 0;
@@ -694,8 +781,12 @@ header .menu-btn button:hover img {
 
 .h-sec-2 .box-wraper {
     margin-top: 100px;
-    height: 400px;
+    height: 430px;
     margin-bottom: 30px;
+}
+section.cta-02 p {
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 .h-sec-2 .box-wraper .img-wrap {
@@ -1377,7 +1468,7 @@ footer ul.ssm-icons li a i {
 }
 
 .cta-02 .main-heading {
-    padding-bottom: 30px
+    padding-bottom: 10px
 }
 
 .faq-sec .img-wrap video {
@@ -2181,8 +2272,8 @@ footer ul.ssm-icons li a:hover img {
 
 .game-banner h1 {
     font-weight: 900;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #fff;
     padding: 20px 0
@@ -2212,6 +2303,147 @@ footer ul.ssm-icons li a:hover img {
     z-index: 1
 }
 
+.services-slider-sec {
+  padding: 60px 0 100px;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0f;
+}
+
+.services-slider-sec.inner-services-sec::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  filter: blur(0px);
+  background: linear-gradient(180deg, #1b1e26 0%, rgba(0, 0, 0, 0) 44.59%, #1b1e26 100%);
+  z-index: 0;
+}
+
+.services-slider-sec .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----- Headings ----- */
+.services-slider-sec .sm-head {
+  color: #00ff88;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.services-slider-sec .main-heading {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.services-slider-sec .main-heading .c-green {
+  color: #00ff88;
+}
+
+/* ----- Slider Container ----- */
+.services-slider-sec ul.services-slider {
+  margin-left: 320px;
+  padding-top: 0;
+  margin-top: 30px;
+  position: relative;
+  list-style: none;
+}
+
+/* Dashed Line */
+.services-slider-sec ul.services-slider::before {
+  content: '';
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  width: 100%;
+  top: 10px;
+  left: 60px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* ----- Slide Items ----- */
+.services-slider-sec ul.services-slider li {
+  padding-top: 70px;
+  position: relative;
+  list-style: none;
+}
+
+/* Circle Dot */
+.services-slider-sec ul.services-slider li::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #2cff28;
+  border-radius: 50%;
+  top: 0;
+  left: 60px;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.services-slider-sec ul.services-slider li:hover::before {
+  background: #ffffff;
+}
+
+.services-slider-sec ul.services-slider li:last-child .item-wrap {
+  opacity: 0.5;
+}
+
+/* ----- Card Wrapper ----- */
+.services-slider-sec ul.services-slider li .item-wrap {
+  background: linear-gradient(13deg, #5339f8 28.39%, #312192 100%);
+  border: 1px solid #252934;
+  clip-path: polygon(10% 0%, 100% 0, 100% 15%, 100% 90%, 90% 100%, 15% 100%, 0 100%, 0% 10%);
+  padding: 90px 40px;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: default;
+  min-height: 280px;
+}
+
+.services-slider-sec ul.services-slider li .item-wrap:hover {
+  background: #2cff28;
+  opacity: 1 !important;
+}
+
+.services-slider-sec ul.services-slider li .item-wrap:hover .content h4 {
+  color: #0a0a0f;
+}
+
+.services-slider-sec ul.services-slider li .item-wrap:hover .content p {
+  color: #0a0a0f;
+}
+
+/* ----- Card Content ----- */
+.services-slider-sec ul.services-slider li .item-wrap .content h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.services-slider-sec ul.services-slider li .item-wrap .content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
 .game-sec2 {
     position: relative;
     padding: 60px 0
@@ -2363,7 +2595,7 @@ footer ul.ssm-icons li a:hover img {
     padding-right: 0
 }
 
-.process-sec ul.process-slider-rht:before {
+/* .process-sec ul.process-slider-rht:before {
     content: 'How we work';
     position: absolute;
     font-weight: 800;
@@ -2379,7 +2611,7 @@ footer ul.ssm-icons li a:hover img {
     right: 90px;
     margin: auto;
     pointer-events: none
-}
+} */
 
 .services-slider-sec ul.services-slider {
     margin-left: 320px;
